@@ -6,6 +6,7 @@ Project-wide milestones. Each repository keeps its own detailed plan in its issu
 |---|---|---|
 | 2026-11-30 | FOSSASIA Summit 2027 proposal submitted | dyne |
 | 2026-12 – 2027-01 | Dyne: feature freeze at the end of January; stability guarantees beyond the heat equation (wave equation inherits the single-computer condition when bit-exact; advection–diffusion with a discrete maximum principle that holds under delayed borders) | dyne |
+| 2026-11 onward | erg: first leg on the bench (stage 1 of the parts list: one leg plus spares, printed frame) for the first hardware measurements | erg |
 | 2026-12 – 2027-02 | erg: robot model with hobby-part limits, central-policy baseline in MuJoCo on CPUs | erg |
 | 2027-02 | IPA MITOU final report; Dyne v1.0 | dyne |
 | 2027-03 | FOSSASIA Summit (if accepted); application for next year's funding | all |
