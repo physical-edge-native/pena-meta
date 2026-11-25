@@ -34,7 +34,7 @@ repository must pass before merging.
 
 | Convention | Value |
 |---|---|
-| License (code) | MIT OR Apache-2.0, files `LICENSE-MIT` and `LICENSE-APACHE` |
+| License | MIT OR Apache-2.0, files `LICENSE-MIT` and `LICENSE-APACHE`, in every repository including the website and `.github` (code and text; [decision](decisions/2026-11-25-license-for-website-and-profile.md)) |
 | Copyright line in `LICENSE-MIT` | `Copyright (c) 2026 The Physical-Edge Native contributors` |
 | `CITATION.cff` license field | `Apache-2.0` with a comment that the work is dual-licensed (a list or `MIT OR Apache-2.0` breaks the Zenodo import) |
 | Repository names | units of the CGS system (dyne, barye, erg, poise, gauss) for projects; descriptive names for infrastructure |

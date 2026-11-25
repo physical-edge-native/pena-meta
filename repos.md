@@ -3,12 +3,12 @@
 The source for the repository table on the project website and the organization profile.
 Update this file first; the coordinating agent checks that the website and the profile match it.
 
-Last checked: 2026-11-25.
+Last checked: 2026-11-25 (report `reports/2026-11-25.md`).
 
 | Repository | The question it answers | Status | Depends on | Maintainer |
 |---|---|---|---|---|
 | [dyne](https://github.com/physical-edge-native/dyne) | Can a physical model be split across many small devices, kept bit-exact with a single computer through loss, delay, joining and leaving, and fed by local sensors? | research prototype, v0.1.0 (DOI 10.5281/zenodo.24241009) | — | gunjou-like |
-| [erg](https://github.com/physical-edge-native/erg) | On the same cheap four-legged robot without vision, how does control split over the legs (neighbour-only exchange) differ from one central policy? | just started: skeleton, Dyne submodule, bit-exact check, CI | dyne | gunjou-like |
+| [erg](https://github.com/physical-edge-native/erg) | On the same cheap four-legged robot without vision, how does control split over the legs (neighbour-only exchange) differ from one central policy? | early: design records (scope, robot and comparison, expected differences), first MJCF model with a 10 s standing test, Dyne submodule with a bit-exact check, CI | dyne | gunjou-like |
 | [gauss](https://github.com/physical-edge-native/gauss) | The same comparison as a pure question of model architecture, at the size of industrial robots | just started: README only | — | gunjou-like |
 | [poise](https://github.com/physical-edge-native/poise) | Can a soft robot body be used as part of the computation (physical reservoir computing) for control? | just started: README only | — | gunjou-like |
 | [physical-edge-native.github.io](https://github.com/physical-edge-native/physical-edge-native.github.io) | The project website | live | — | gunjou-like |
