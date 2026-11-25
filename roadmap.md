@@ -11,3 +11,4 @@ Project-wide milestones. Each repository keeps its own detailed plan in its issu
 | 2027-03 | FOSSASIA Summit (if accepted); application for next year's funding | all |
 | 2027-05 onward | JOSS submission for dyne (six months of public history) | dyne |
 | 2027 | Proof-of-concept with an outside partner; robot hardware for erg; first content in gauss and poise | all |
+| Not scheduled | Actuators for an acrobatic quadruped (jumps, backflips) at about ¥100,000 in parts; started when the maintainer decides ([decision](decisions/2026-11-25-acrobatic-quadruped-actuators.md), #9) | a new repository, when started |
