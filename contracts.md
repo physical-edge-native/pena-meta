@@ -45,3 +45,7 @@ repository must pass before merging.
 | Claims | no repository claims superiority over centralised or GPU-based approaches; measured differences are the result |
 | Data hygiene | no secrets, personal data, or real MAC addresses of other people's devices in any public repository |
 | Primary bit-exact check | split solution equals single-domain solution, bit for bit, also across operating systems |
+| Outside contributions | through forks and pull requests; accepted under the repository's license (inbound = outbound), no sign-off or CLA ([decision](decisions/2026-11-26-outside-contributors.md)) |
+| Where people go | questions: GitHub Discussions; conversation: Discord; bugs: Issues (listed in `SUPPORT.md`) |
+| Review | `CODEOWNERS` names the maintainer for every file |
+| Organization settings | members read-only and cannot create repositories; fork workflows need approval; GitHub recommended security configuration on all repositories; ruleset `protect-main-all` on every default branch |
