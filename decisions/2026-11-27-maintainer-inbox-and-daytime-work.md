@@ -25,7 +25,7 @@ and how scheduled runs avoid interfering with work the maintainer is doing with 
 2. **Notifications only for new items.** The coordinator records the listed items in a hidden comment in the
    inbox body and sends a phone notification only when an item appears that was not listed before.
 3. **Daytime work is marked and skipped.** When the maintainer starts on an issue with an agent during the day,
-   that session labels the issue `in-progress` (assigning the issue to the maintainer has the same effect).
+   that session labels the issue `in-progress`. The label is the only marker; assignment is not used.
    Scheduled runs do not act on such issues or on their branches and pull requests: no answers, label changes,
    comments or merges. Only the maintainer or a daytime session removes `in-progress`.
 4. **Labels in every repository:** `needs-coordinator`, `needs-maintainer`, `hands-on`, `in-progress`.
@@ -47,6 +47,6 @@ and how scheduled runs avoid interfering with work the maintainer is doing with 
 
 ## Options considered
 
-- Marking daytime work: (a) a label `in-progress` **chosen**, with assignment accepted as well; (b) assignment only.
+- Marking daytime work: (a) a label `in-progress` only **chosen**; (b) assignment to the maintainer; (c) both.
 - Weekly check: (a) fold into the Monday 3:45 coordinator run **chosen**; (b) keep a separate weekly task.
 - Model for scheduled runs: (a) Claude Opus everywhere **chosen**; (b) a lighter model for repository runs.
