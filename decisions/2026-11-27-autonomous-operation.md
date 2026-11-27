@@ -52,9 +52,18 @@ repositories. When about one day of such work has accumulated, it proposes a "ha
 
 ### 5. How often agents run
 
-Agents run as scheduled tasks in the cloud: each of dyne, erg, gauss and poise every hour, the website every six
-hours, the coordinator every hour at a different minute. Each run takes up the state from issues, branches and pull
-requests. The frequency will be adjusted if usage limits are reached.
+Agents run as scheduled tasks in the cloud, at night and in the early morning, when the maintainer is usually
+not at the keyboard (the maintainer works with the agents directly around 10:00–17:00 and 20:00–24:00, Japan
+time):
+
+- each of dyne, erg, gauss and poise at 1:00, 3:00, 5:00, 7:00 and 9:00;
+- the website once a night;
+- the coordinator 45 minutes after each repository run (1:45, 3:45, 5:45, 7:45, 9:45), so that the
+  Maintainer inbox is up to date when the maintainer starts.
+
+Each run takes up the state from issues, branches and pull requests. The runs must stay within the
+maintainer's subscription: no paid extra usage. The schedule or the model used for routine runs will be adjusted
+if usage limits are reached.
 
 ### 6. The coordinator's channel to the maintainer
 

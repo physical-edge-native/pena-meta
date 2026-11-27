@@ -22,7 +22,7 @@ issue を提案する。
 | physical-edge-native.github.io | リポジトリの表、限界の記述、Dyne の結果の書き方 |
 | .github | 組織のプロフィールのリポジトリの一覧、行動規範 |
 
-## 毎回の起動でやること（1時間ごと。`decisions/2026-11-27-autonomous-operation.md`）
+## 毎回の起動でやること（1:45・3:45・5:45・7:45・9:45。`decisions/2026-11-27-autonomous-operation.md`）
 
 1. 各リポジトリの `needs-coordinator` の Issue を読み、段階1なら判断を Issue に返し、ラベルを外す。段階2なら
    `needs-maintainer` に付け替える。重要な判断は `decisions/` に記録する（ブランチとプルリクエストで）。
