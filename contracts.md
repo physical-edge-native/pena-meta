@@ -25,7 +25,7 @@ Dyne is not published on crates.io. Other repositories depend on it at a **fixed
 | Repository | Depends on | Pinned commit | How | Updated |
 |---|---|---|---|---|
 | erg | dyne | `v0.2.0` (`2919654`) | git submodule `third_party/dyne` | 2026-11-28 (erg#91) |
-| gauss | erg (robot model `models/quadruped.xml`) | to be set after erg#67 (body L1 model) is merged | fetched by script, checked by SHA-256 ([decision](decisions/2026-11-28-gauss-uses-ergs-model.md)) | — |
+| gauss | erg (robot model `models/quadruped.xml`) | `7c2f070` (merge of erg#67, body L1 model) | fetched by script, checked by SHA-256 ([decision](decisions/2026-11-28-gauss-uses-ergs-model.md)) | 2026-11-29 (gauss#48) |
 | poise | — | — | — | — |
 
 Rule: moving a pin is its own issue and pull request, and every bit-exact check in the dependent
