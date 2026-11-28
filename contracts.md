@@ -15,7 +15,8 @@ Last checked: 2026-11-25 (initial version, from dyne `85a9efd` and erg `7348aa9`
 | Model file for learned solvers (`.dynm`) | `dyne/crates/mlp-core` (magic `DYNM`) | as of dyne `85a9efd` | dyne, erg |
 | Learned-solver WebAssembly component | `dyne/crates/mlp-actor` | as of dyne `85a9efd` | dyne, erg |
 | Deterministic virtual network (loss, delay, partitions; seeded) | `dyne/crates/dyne-core` | as of dyne `85a9efd` | dyne, erg |
-| Rules for a device leaving and rejoining | dyne docs (`docs-site/concepts.md`) | rejoin into the computation is **not yet** implemented on hardware (dyne #131) | dyne, erg |
+| Rules for a device leaving and rejoining | dyne docs (`docs-site/concepts.md`) | two modes, chosen per run ([decision](decisions/2026-11-28-leaving-and-rejoining.md)): *wait and restore* (bit-exact with a fault-free run) and *continue and rejoin as new* (equals a simulator run with the same leave and join). Rejoin into the computation is **not yet** implemented on hardware (dyne #131) | dyne, erg |
+| Environment export (room geometry for robot simulators: USD, MJCF) | dyne export tools | frame: Z up, units: metres, as of the dyne commit erg pins ([decision](decisions/2026-11-28-environment-export-contract.md)) | dyne, erg |
 
 Dyne is not published on crates.io. Other repositories depend on it at a **fixed commit**.
 
@@ -24,7 +25,7 @@ Dyne is not published on crates.io. Other repositories depend on it at a **fixed
 | Repository | Depends on | Pinned commit | How | Updated |
 |---|---|---|---|---|
 | erg | dyne | `85a9efd` | git submodule `third_party/dyne` | 2026-11-24 |
-| gauss | — | — | — | — |
+| gauss | erg (robot model `models/quadruped.xml`) | to be set after erg#67 (body L1 model) is merged | fetched by script, checked by SHA-256 ([decision](decisions/2026-11-28-gauss-uses-ergs-model.md)) | — |
 | poise | — | — | — | — |
 
 Rule: moving a pin is its own issue and pull request, and every bit-exact check in the dependent
