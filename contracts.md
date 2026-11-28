@@ -3,7 +3,7 @@
 Interfaces and versions that more than one repository depends on. A change to any row is a
 cross-repository change: open a proposal here first (see README).
 
-Last checked: 2026-11-25 (initial version, from dyne `85a9efd` and erg `7348aa9`).
+Last checked: 2026-11-28 (erg moved its Dyne pin to `v0.2.0` in erg#91; the crates erg uses changed only their version numbers since `85a9efd`).
 
 ## Interfaces owned by dyne
 
@@ -11,10 +11,10 @@ Last checked: 2026-11-25 (initial version, from dyne `85a9efd` and erg `7348aa9`
 |---|---|---|---|
 | Wire format for values exchanged between devices | `dyne/crates/dyne-wire` (`VERSION`) | **2** (24-byte header; no sequence number or CRC inside the format) | dyne, erg |
 | Envelope around the wire format on real radios | `dyne/crates/dyne-wire/src/envelope.rs` (`ENV_VERSION`) | **1** | dyne |
-| Solver interface (WebAssembly solver ABI: configuration keys, modes, faces, boundary kinds) | `dyne/crates/dyne-wire/src/abi.rs` | as of dyne `85a9efd` | dyne, erg |
-| Model file for learned solvers (`.dynm`) | `dyne/crates/mlp-core` (magic `DYNM`) | as of dyne `85a9efd` | dyne, erg |
-| Learned-solver WebAssembly component | `dyne/crates/mlp-actor` | as of dyne `85a9efd` | dyne, erg |
-| Deterministic virtual network (loss, delay, partitions; seeded) | `dyne/crates/dyne-core` | as of dyne `85a9efd` | dyne, erg |
+| Solver interface (WebAssembly solver ABI: configuration keys, modes, faces, boundary kinds) | `dyne/crates/dyne-wire/src/abi.rs` | as of dyne `v0.2.0` (`2919654`) | dyne, erg |
+| Model file for learned solvers (`.dynm`) | `dyne/crates/mlp-core` (magic `DYNM`) | as of dyne `v0.2.0` (`2919654`) | dyne, erg |
+| Learned-solver WebAssembly component | `dyne/crates/mlp-actor` | as of dyne `v0.2.0` (`2919654`) | dyne, erg |
+| Deterministic virtual network (loss, delay, partitions; seeded) | `dyne/crates/dyne-core` | as of dyne `v0.2.0` (`2919654`) | dyne, erg |
 | Rules for a device leaving and rejoining | dyne docs (`docs-site/concepts.md`) | two modes, chosen per run ([decision](decisions/2026-11-28-leaving-and-rejoining.md)): *wait and restore* (bit-exact with a fault-free run) and *continue and rejoin as new* (equals a simulator run with the same leave and join). Rejoin into the computation is **not yet** implemented on hardware (dyne #131) | dyne, erg |
 | Environment export (room geometry for robot simulators: USD, MJCF) | dyne export tools | frame: Z up, units: metres, as of the dyne commit erg pins ([decision](decisions/2026-11-28-environment-export-contract.md)) | dyne, erg |
 
@@ -24,7 +24,7 @@ Dyne is not published on crates.io. Other repositories depend on it at a **fixed
 
 | Repository | Depends on | Pinned commit | How | Updated |
 |---|---|---|---|---|
-| erg | dyne | `85a9efd` | git submodule `third_party/dyne` | 2026-11-24 |
+| erg | dyne | `v0.2.0` (`2919654`) | git submodule `third_party/dyne` | 2026-11-28 (erg#91) |
 | gauss | erg (robot model `models/quadruped.xml`) | to be set after erg#67 (body L1 model) is merged | fetched by script, checked by SHA-256 ([decision](decisions/2026-11-28-gauss-uses-ergs-model.md)) | — |
 | poise | — | — | — | — |
 
